@@ -1,5 +1,5 @@
 /*******************************************************
-FINAL SOC MAPPING – Germany (2022)
+M4: FINAL SOC MAPPING – Germany (2022)
 Model: Random Forest regression
 Inputs: Sentinel-2 (Apr–Oct 2022) + NDVI
         Sentinel-1 (2022) + derived radar vars
