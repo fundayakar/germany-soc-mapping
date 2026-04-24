@@ -11,27 +11,27 @@ The workflow combines:
 
 ## Repository Structure
 gee/
-m4_lucas_training_export.js
+m1_lucas_training_s1s2_ndvi.js
 m4_soc_mapping.js
 
 notebooks/
-m4_rf_model_training_s1_s2_dem.ipynb
+m1_rf_model_training_s1_s2_ndvi.ipynb
 
 python/
-m4_rf_model_training_s1_s2_dem.py
+m1_rf_model_training_s1_s2_ndvi.py
 
 ## Workflow
 
 1. **Training data generation (GEE)**  
    Run:
-   gee/lucas_training_export.js
+   gee/m1_lucas_training_s1s2_ndvi.js
 
 This script extracts predictor variables and LUCAS soil data and exports a training dataset.
 
 2. **Model training (Python / Colab)**  
 Run:
 
-notebooks/rf_model_training_s1_s2_dem.ipynb
+notebooks/m1_rf_model_training_s1_s2_ndvi.ipynb
 
 or the Python script in `/python/`.
 
@@ -40,7 +40,7 @@ The script expects the training dataset exported from GEE.
 3. **SOC mapping (GEE)**  
 Run:
 
-gee/soc_mapping_initial.js
+gee/soc_mapping.js
 
 This script trains a Random Forest model and produces a spatial SOC prediction map.
 
@@ -53,6 +53,7 @@ Additional bias correction and refinement steps were applied using GIS tools (e.
 - Sentinel-1 (radar)
 - SRTM DEM
 - LUCAS soil database
+- ERA5
 
 ## Notes
 
