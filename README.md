@@ -11,14 +11,14 @@ The workflow combines:
 
 ## Repository Structure
 gee/
-lucas_training_export.js
-soc_mapping_initial.js
+m4_lucas_training_export.js
+m4_soc_mapping.js
 
 notebooks/
-rf_model_training_s1_s2_dem.ipynb
+m4_rf_model_training_s1_s2_dem.ipynb
 
 python/
-rf_model_training_s1_s2_dem.py
+m4_rf_model_training_s1_s2_dem.py
 
 ## Workflow
 
@@ -62,3 +62,12 @@ Additional bias correction and refinement steps were applied using GIS tools (e.
 ## Status
 
 Prepared as a reproducibility resource for manuscript submission and review.
+
+## Model Variants
+
+- M1: S2 + S1 + NDVI
+- M2: M1 + bare soil mask
+- M3: M1 + ERA5 annual
+- M4: M1 + DEM
+- M5: M1 + DEM + seasonal S2 + BSI
+- M6: M1 + DEM + ERA5 seasonal
