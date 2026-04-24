@@ -6,7 +6,7 @@ from sklearn.metrics import r2_score, mean_squared_error
 from google.colab import files
 
 # ==============================
-# 1) CSV yükle
+# 1) CSV upload
 # ==============================
 uploaded = files.upload()
 fname = list(uploaded.keys())[0]
