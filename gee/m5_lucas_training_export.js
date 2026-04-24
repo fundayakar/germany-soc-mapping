@@ -1,5 +1,5 @@
 /*******************************************************
- M5: S1 + S2 (spring + autumn ayrı) + DEM + TWI
+ M5: S1 + S2 (spring + autumn seperate) + DEM + TWI
  Germany | LUCAS OC | 2022
  Export: training CSV to Drive
 *******************************************************/
