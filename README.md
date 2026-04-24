@@ -1,3 +1,7 @@
+## Status
+
+This repository is maintained as a reproducibility resource for an ongoing academic study.
+
 # Germany SOC Mapping Workflow
 
 This repository contains the code and workflow developed for soil organic carbon (SOC) mapping in Germany using remote sensing and machine learning.
