@@ -8,6 +8,9 @@ The workflow combines:
 - Google Earth Engine (GEE) for data extraction and spatial prediction
 - Python (Colab) for model training and evaluation
 - Post-processing (bias correction) applied externally
+  
+## File naming convention:
+Each script is prefixed with the model identifier (e.g., m3_, m4_) to indicate the corresponding feature combination.
 
 ## Repository Structure
 gee/
@@ -49,11 +52,11 @@ Additional bias correction and refinement steps were applied using GIS tools (e.
 
 ## Data Sources
 
-- Sentinel-2 (optical imagery)
-- Sentinel-1 (radar)
-- SRTM DEM
-- LUCAS soil database
-- ERA5
+- Sentinel-2 Surface Reflectance (COPERNICUS/S2_SR), April–October 2022  
+- Sentinel-1 GRD (COPERNICUS/S1_GRD), 2022 (VV and VH polarizations)  
+- SRTM Digital Elevation Model (USGS/SRTMGL1_003)  
+- LUCAS topsoil dataset (2018)  
+- ERA5-Land climate data (annual and seasonal aggregates, 2022)
 
 ## Notes
 
@@ -66,9 +69,13 @@ Prepared as a reproducibility resource for manuscript submission and review.
 
 ## Model Variants
 
-- M1: S2 + S1 + NDVI
-- M2: M1 + bare soil mask
-- M3: M1 + ERA5 annual
-- M4: M1 + DEM
-- M5: M1 + DEM + seasonal S2 + BSI
-- M6: M1 + DEM + ERA5 seasonal
+The following feature combinations were tested:
+
+- **M1**: Sentinel-2 + Sentinel-1 + NDVI  
+- **M2**: M1 + bare soil mask  
+- **M3**: M1 + ERA5 annual variables  
+- **M4**: M1 + DEM  
+- **M5**: M1 + DEM + seasonal Sentinel-2 + BSI  
+- **M6**: M1 + DEM + ERA5 seasonal variables  
+
+The best-performing model in this workflow is **M4**.
