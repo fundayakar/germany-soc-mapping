@@ -1,5 +1,5 @@
 /*******************************************************
-Germany | LUCAS OC + Sentinel-2 (Apr-Oct 2022) + NDVI
+M4: Germany | LUCAS OC + Sentinel-2 (Apr-Oct 2022) + NDVI
 + Sentinel-1 (2022 full year) + derived vars
 + DEM (SRTM elevation + slope + aspect)
 Export: training table CSV to Drive
