@@ -1,5 +1,4 @@
 /*******************************************************
- CLEAN + FIXED PIPELINE
  Germany | LUCAS OC + Sentinel-2 (Apr-Oct 2022) + NDVI
  + Sentinel-1 (wider window for overlap) + derived vars
  Exports: training table to Drive (CSV)
