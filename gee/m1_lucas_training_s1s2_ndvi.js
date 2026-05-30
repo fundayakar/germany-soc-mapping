@@ -88,7 +88,7 @@ var t_s2 = s2_predictors.sampleRegions({
   collection: lucas_de,
   properties: ['OC'],
   scale: 10,
-  geometries: false
+  geometries: true
 }).filter(ee.Filter.notNull(['B2','B3','B4','B8','B11','B12','NDVI','OC']));
 
 print('After S2+NDVI notNull:', t_s2.size());
