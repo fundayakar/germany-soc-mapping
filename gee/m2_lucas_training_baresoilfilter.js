@@ -73,7 +73,7 @@ var training = predictors_all.sampleRegions({
   collection: lucas_de,
   properties: ['OC'],
   scale: 10,
-  geometries: false
+  geometries: true
 });
 
 // notNull filtresi (tüm kolonlar dolu olsun)
