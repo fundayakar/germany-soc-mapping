@@ -110,7 +110,7 @@ var training = predictors.select(featureBands).sampleRegions({
   collection: lucas,
   properties: ['OC'],
   scale: 10,
-  geometries: false,
+  geometries: true,
   tileScale: 4
 }).filter(ee.Filter.notNull(featureBands.concat(['OC'])));
 
