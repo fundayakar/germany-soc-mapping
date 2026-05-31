@@ -127,6 +127,6 @@ print('If training is 0, problem = intersection/masking/date. Try: CLOUDY<40 or 
 // ----------------------------
 Export.table.toDrive({
   collection: training,
-  description: 'DE_LUCAS2018_S2_2022_S1_2022_training',
+  description: 'M1_DE_LUCAS2018_S2_2022_S1_2022_training',
   fileFormat: 'CSV'
 });
