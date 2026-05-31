@@ -112,6 +112,6 @@ print('Example row:', training.first());
 // 8) Export
 Export.table.toDrive({
   collection: training,
-  description: 'DE_LUCAS_M6_S1S2_DEM_ERA5seasonal',
+  description: 'M6_DE_LUCAS_S1S2_DEM_ERA5seasonal',
   fileFormat: 'CSV'
 });
