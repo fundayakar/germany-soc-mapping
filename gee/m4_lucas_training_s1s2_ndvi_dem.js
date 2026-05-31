@@ -74,7 +74,7 @@ var training = predictors.sampleRegions({
   collection: lucas,
   properties: ['OC'],
   scale: 10,
-  geometries: false,
+  geometries: true,
   tileScale: 4
 });
 
