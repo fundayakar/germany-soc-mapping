@@ -120,6 +120,6 @@ print('Example row:', training.first());
 // 8) Export
 Export.table.toDrive({
   collection: training,
-  description: 'DE_LUCAS_M5_spring_autumn_DEM',
+  description: 'M5_DE_LUCAS_spring_autumn_DEM',
   fileFormat: 'CSV'
 });
