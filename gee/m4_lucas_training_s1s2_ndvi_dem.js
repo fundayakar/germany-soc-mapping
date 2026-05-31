@@ -94,6 +94,6 @@ print('Training example row:', training.first());
 // 7) Export
 Export.table.toDrive({
   collection: training,
-  description: 'DE_LUCAS2018_S1S2_DEM_2022_training',
+  description: 'M4_DE_LUCAS2018_S1S2_DEM_2022_training',
   fileFormat: 'CSV'
 });
